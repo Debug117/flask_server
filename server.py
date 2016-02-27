@@ -1,5 +1,8 @@
 #!/usr/bin/python
-#requirements: pip install flask
+#prepare
+#apt-get install python-pip
+#apt-get install python-mysqldb
+#pip install flask
 
 from flask import Flask
 from flask import render_template
