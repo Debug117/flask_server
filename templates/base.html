@@ -1,0 +1,19 @@
+<html>
+  <head>
+    {% if site %}
+    <title>{{site.name}} - {{site.user}}</title>
+    {% else %}
+    <title>TestSite</title>
+    {% endif %}
+  </head>
+  <body>
+    {% if site %}
+    <div><a href="http://{{site.domain}}/">Home</a></div>
+    <div><h1>Hi, {{site.user}}!</h1></div>
+    {% endif %}
+    <hr>
+    <div style="width:800px;padding:100px;">
+    {% block content %}{% endblock %}
+    </div>
+  </body>
+</html>
